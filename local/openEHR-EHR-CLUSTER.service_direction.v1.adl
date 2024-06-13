@@ -114,7 +114,7 @@ The CLUSTER can be renamed in template or at run-time to represent a specific se
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"0EE9628D2B91CB934A0F3D31546F727F">
+		["MD5-CAM-1.0.1"] = <"e526c92b308cba6453c0be81ed2532c9">
 		["build_uid"] = <"40cda3d0-9891-468c-86a2-c9a024383b2a">
 		["revision"] = <"1.0.1">
 	>
