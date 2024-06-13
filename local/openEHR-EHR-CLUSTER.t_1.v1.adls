@@ -1,0 +1,93 @@
+template (adl_version=2.0.6; rm_release=1.1.0; generated; uid=f75b3bbb-48e6-48ef-932f-dcffcaf7842f; build_uid=09eaa6aa-3372-3a05-9e45-cbc9f27adf78)
+    openEHR-EHR-CLUSTER.t_1.v1.4.1
+
+specialize
+    openEHR-EHR-CLUSTER.therapeutic_direction.v1
+
+language
+    original_language = <[ISO_639-1::en]>
+    translations = <
+        ["de"] = <
+            language = <[ISO_639-1::de]>
+        >
+        ["nb"] = <
+            language = <[ISO_639-1::nb]>
+        >
+        ["pt-br"] = <
+            language = <[ISO_639-1::pt-br]>
+        >
+        ["sl"] = <
+            language = <[ISO_639-1::sl]>
+        >
+    >
+
+description
+    original_author = <
+        ["date"] = <"2024-06-13">
+    >
+    lifecycle_state = <"unmanaged">
+    other_details = <
+        ["licence"] = <"">
+        ["custodian_organisation"] = <"">
+        ["original_namespace"] = <"">
+        ["original_publisher"] = <"">
+        ["custodian_namespace"] = <"">
+        ["sem_ver"] = <"0.1.0">
+        ["build_uid"] = <"dec65046-39c3-4dda-b096-cb2261e78fb3">
+        ["MD5-CAM-1.0.1"] = <"20d0418101bcfcf7705c3ad890854b4e">
+        ["PARENT:MD5-CAM-1.0.1"] = <"3cedd6d1f3a5509c9572d61ea05ba635">
+    >
+    details = <
+        ["de"] = <
+            language = <[ISO_639-1::de]>
+        >
+        ["nb"] = <
+            language = <[ISO_639-1::nb]>
+        >
+        ["pt-br"] = <
+            language = <[ISO_639-1::pt-br]>
+        >
+        ["en"] = <
+            language = <[ISO_639-1::en]>
+        >
+        ["sl"] = <
+            language = <[ISO_639-1::sl]>
+        >
+    >
+
+definition
+    CLUSTER[id1.1]     -- 1
+
+terminology
+    term_definitions = <
+        ["de"] = <
+            ["id1.1"] = <
+                text = <"1">
+                description = <"Strukturierte Informationen über eine einzelne therapeutische Anweisung / Anleitung für eine verordnete Einheit, wie z. B. eine Medikamenten- oder Bluttransfusionsverordnung.">
+            >
+        >
+        ["nb"] = <
+            ["id1.1"] = <
+                text = <"1">
+                description = <"Detaljer om en enkelt anvisning innenfor ordineringen av f.eks. et legemiddel eller en transfusjon.">
+            >
+        >
+        ["pt-br"] = <
+            ["id1.1"] = <
+                text = <"1">
+                description = <"Detalhes estruturados de uma única orientação terapêutica para um item prescrito, como um medicamento ou uma solicitação de transfusão de sangue.">
+            >
+        >
+        ["en"] = <
+            ["id1.1"] = <
+                text = <"1">
+                description = <"Structured details of a single therapeutic direction for an ordered item, such as a medication or blood transfusion order.">
+            >
+        >
+        ["sl"] = <
+            ["id1.1"] = <
+                text = <"1">
+                description = <"*Structured details of a single therapeutic direction for an ordered item, such as a medication or blood transfusion order. (en)">
+            >
+        >
+    >
