@@ -29,6 +29,9 @@ language
             >
             accreditation = <"MD, PhD">
         >
+        ["sl"] = <
+            language = <[ISO_639-1::sl]>
+        >
     >
 
 description
@@ -54,60 +57,64 @@ description
     >
     other_details = <
         ["current_contact"] = <"Ian McNicoll, freshEHR Clinical Informatics, UK <ian@freshehr.com>">
-        ["MD5-CAM-1.0.1"] = <"8E48FD73FBF88E927DD20879DB2D9775">
+        ["MD5-CAM-1.0.1"] = <"3cedd6d1f3a5509c9572d61ea05ba635">
     >
     details = <
         ["de"] = <
             language = <[ISO_639-1::de]>
             purpose = <"Zur strukturierten Darstellung einer therapeutischen Anweisung für ein angefordertes therapeutisches / verordnungsfähiges Präparat.
-        
-        Jede Anweisung gilt in der Regel für eine bestimmte Dauer oder eine bestimmte Anzahl von Verabreichungen.">
+                
+                Jede Anweisung gilt in der Regel für eine bestimmte Dauer oder eine bestimmte Anzahl von Verabreichungen.">
             keywords = <"Medikation", "Verordnung", "verschreiben", "verordnen", "Therapie", "Substanz", "Wirkstoff", "Arzneimittel", "Medikament", "therapeutisch", "therapeutisches Erzeugnis", "Therapeutisches Produkt", "Pharmazeutikum", "Produkt", "Posologie", "Dosierung", "Behandlung", "Transfusion">
             use = <"Eine Anweisung beschreibt ein oder mehrere aufeinanderfolgende therapeutische Verabreichungsmuster. Sie fasst eine Gesamtdauer der Anweisung und Details eines sich wiederholenden Musters einer beabsichtigten Verabreichung außerhalb eines einzelnen Tages zusammen.
-        
-        Zum Beispiel: „1 Tablette morgens, 1 Tablette abends, für 3 Wochen, montags, mittwochs und freitags“. Dieser Cluster kann wiederholt werden, um einen vollständigen Satz von Anweisungen zur Dosierung für eine einzelne Medikamentenverordnung darzustellen. Der Cluster kann im Template oder zur Laufzeit der Anwendung umbenannt werden, um eine bestimmte Dosisgabe darzustellen, z. B. \"Anfangsdosis\", \"Bolus\".
-        
-        Im Allgemeinen wird dieser Archetyp im Kontext eines übergeordneten INSTRUCTION-Archetyps verwendet. Er wurde speziell für die Verwendung im Rahmen einer komplexen Verordnung von Medikamenten, einschließlich intravenöser Medikation, aber auch für die Verordnung von Flüssigkeiten im Zusammenhang mit Transfusionen oder Dialyse entwickelt.">
+                
+                Zum Beispiel: „1 Tablette morgens, 1 Tablette abends, für 3 Wochen, montags, mittwochs und freitags“. Dieser Cluster kann wiederholt werden, um einen vollständigen Satz von Anweisungen zur Dosierung für eine einzelne Medikamentenverordnung darzustellen. Der Cluster kann im Template oder zur Laufzeit der Anwendung umbenannt werden, um eine bestimmte Dosisgabe darzustellen, z. B. \"Anfangsdosis\", \"Bolus\".
+                
+                Im Allgemeinen wird dieser Archetyp im Kontext eines übergeordneten INSTRUCTION-Archetyps verwendet. Er wurde speziell für die Verwendung im Rahmen einer komplexen Verordnung von Medikamenten, einschließlich intravenöser Medikation, aber auch für die Verordnung von Flüssigkeiten im Zusammenhang mit Transfusionen oder Dialyse entwickelt.">
             misuse = <"">
         >
         ["nb"] = <
             language = <[ISO_639-1::nb]>
             purpose = <"For å registrere strukturerte detaljer om en enkelt anvisning for en ordinert terapeutisk vare.
-        
-        Hver anvisning er generelt gyldig i et gitt tidsintervall eller antall administreringer.">
+                
+                Hver anvisning er generelt gyldig i et gitt tidsintervall eller antall administreringer.">
             keywords = <"legemiddel", "ordinering", "foreskrive", "terapi", "substans", "medisin", "medikament", "terapeutisk", "farmasøytisk", "produkt", "posologi", "behandling", "transfusjon">
             use = <"En anvisning beskriver en eller flere sekvensielle terapeutiske administreringsmønstre, sammen med en overordnet anvisningsvarighet og detaljer om repetisjonsmønstre for administrering utover en gitt dag.
-        
-        For eksempel \"1 tablett om morgenen og en tablett om kvelden i tre uker, på mandager, onsdager og fredager\". Clusteret kan repeteres for å kunne representere et fullstendig sett av anvisninger for en enkelt legemiddelordinering. Clusteret kan gis nytt navn i et templat eller i applikasjonen for å representere en spesifikk dosering som for eksempel: \"Bolus\" eller \"Startdose\".
-        
-        Arketypen vil generelt bli brukt innenfor en overordnet INSTRUCTION-arketype. Den er spesielt designer for bruk innenfor en kompleks legemiddelordinering inkludert intravenøse legemidler, eller for ordinert væske i sammenheng med transfusjon eller dialyse.">
+                
+                For eksempel \"1 tablett om morgenen og en tablett om kvelden i tre uker, på mandager, onsdager og fredager\". Clusteret kan repeteres for å kunne representere et fullstendig sett av anvisninger for en enkelt legemiddelordinering. Clusteret kan gis nytt navn i et templat eller i applikasjonen for å representere en spesifikk dosering som for eksempel: \"Bolus\" eller \"Startdose\".
+                
+                Arketypen vil generelt bli brukt innenfor en overordnet INSTRUCTION-arketype. Den er spesielt designer for bruk innenfor en kompleks legemiddelordinering inkludert intravenøse legemidler, eller for ordinert væske i sammenheng med transfusjon eller dialyse.">
             misuse = <"">
         >
         ["pt-br"] = <
             language = <[ISO_639-1::pt-br]>
             purpose = <"Para registrar detalhes estruturados de uma única instrução terapêutica para um item terapêutico prescrito.
-        
-        Cada instrução geralmente se aplica por uma determinado período de tempo, ou por um número fixo de administrações.">
+                
+                Cada instrução geralmente se aplica por uma determinado período de tempo, ou por um número fixo de administrações.">
             keywords = <"medicamento", "prescrição", "prescrever", "terapia", "substância", "droga", "terapêutico", "etc", "produto terapêutico", "farmacêutico", "produtos", "posologia", "tratamento", "transfusão">
             use = <"*A direction describes one or more sequential therapeutic administration patterns, coupled with an overall direction duration and details of any repetitive pattern of intended administration outside a single day.
-        
-        For example: '1 tab in the morning, 1 tab at night, for 3 weeks, on Mondays, Wednesdays and Fridays'. This cluster allows multiple occurrences to enable representation of a complete set of dosage directions for a single medication order. The cluster can be renamed in template or at run-time to represent a specific dosing event such as 'loading dose', 'bolus'.
-        
-        This archetype will generally be used in the context of a parent INSTRUCTION archetype. It has been specifically designed for use within a complex Medication order including IV medication, or for fluid orders in the context of transfusion or dialysis. (en)">
+                
+                For example: '1 tab in the morning, 1 tab at night, for 3 weeks, on Mondays, Wednesdays and Fridays'. This cluster allows multiple occurrences to enable representation of a complete set of dosage directions for a single medication order. The cluster can be renamed in template or at run-time to represent a specific dosing event such as 'loading dose', 'bolus'.
+                
+                This archetype will generally be used in the context of a parent INSTRUCTION archetype. It has been specifically designed for use within a complex Medication order including IV medication, or for fluid orders in the context of transfusion or dialysis. (en)">
             misuse = <"">
         >
         ["en"] = <
             language = <[ISO_639-1::en]>
             purpose = <"To record structured details of a single therapeutic direction for an ordered therapeutic/prescribable item.
-        
-        Each direction generally applies for a given duration, or fixed number of administrations.">
+                
+                Each direction generally applies for a given duration, or fixed number of administrations.">
             keywords = <"medication", "order", "prescribe", "therapy", "substance", "drug", "therapeutic", "otc", "therapeutic good", "pharmaceutical", "product", "posology", "treatment", "transfusion">
             use = <"A direction describes one or more sequential therapeutic administration patterns, coupled with an overall direction duration and details of any repetitive pattern of intended administration outside a single day.
-        
-        For example: '1 tab in the morning, 1 tab at night, for 3 weeks, on Mondays, Wednesdays and Fridays'. This cluster allows multiple occurrences to enable representation of a complete set of dosage directions for a single medication order. The cluster can be renamed in template or at run-time to represent a specific dosing event such as 'loading dose', 'bolus'.
-        
-        This archetype will generally be used in the context of a parent INSTRUCTION archetype. It has been specifically designed for use within a complex Medication order including IV medication, or for fluid orders in the context of transfusion or dialysis.">
+                
+                For example: '1 tab in the morning, 1 tab at night, for 3 weeks, on Mondays, Wednesdays and Fridays'. This cluster allows multiple occurrences to enable representation of a complete set of dosage directions for a single medication order. The cluster can be renamed in template or at run-time to represent a specific dosing event such as 'loading dose', 'bolus'.
+                
+                This archetype will generally be used in the context of a parent INSTRUCTION archetype. It has been specifically designed for use within a complex Medication order including IV medication, or for fluid orders in the context of transfusion or dialysis.">
             misuse = <"">
+            copyright = <"© openEHR Foundation">
+        >
+        ["sl"] = <
+            language = <[ISO_639-1::sl]>
             copyright = <"© openEHR Foundation">
         >
     >
@@ -129,18 +136,14 @@ definition
             ELEMENT[id67] occurrences matches {0..1} matches {    -- Direction duration
                 value matches {
                     DV_CODED_TEXT[id9002] matches {
-                        defining_code matches {[ac9000]}    -- Direction duration (synthesised)
+                        defining_code matches {[ac9004]}    -- (Synthesized)
                     }
                     DV_DURATION[id9003] 
                     DV_TEXT[id9004] 
-                    DV_INTERVAL<DV_DURATION>[id9006] matches {
-                        lower matches {
-                            DV_DURATION[id9007] 
-                        }
-                        upper matches {
-                            DV_DURATION[id9008] 
-                        }
-                    }
+                    DV_INTERVAL<DV_DURATION>[id9021] 
+                }
+                name matches {
+                    DV_CODED_TEXT[id9020] 
                 }
             }
             ELEMENT[id173] occurrences matches {0..1} matches {    -- Number of administrations
@@ -193,10 +196,6 @@ definition
 terminology
     term_definitions = <
         ["de"] = <
-            ["ac9000"] = <
-                text = <"Dauer der Anweisung (synthesised)">
-                description = <"Die Zeitspanne, für die diese Anweisung angewendet werden soll. (synthesised)">
-            >
             ["id180"] = <
                 text = <"Stopdatum/-zeit der Verordnung">
                 description = <"Das Datum und optional die Uhrzeit, wann die Verabreichung beendet werden soll.">
@@ -246,18 +245,18 @@ terminology
                 text = <"Reihenfolge der Anweisung">
                 description = <"Beabsichtigte Reihenfolge dieser Anweisung in der gesamten Anweisungsfolge.">
                 comment = <"Zum Beispiel: ''1'', \"2\", \"3\". 
-        Wenn mehrere Dosierungsanweisungen angegeben sind, gibt die „Reihenfolge der Anweisung“ die Reihenfolge an, in der sie explizit ausgeführt werden sollen. Zum Beispiel: (1) 1 Tablette täglich für 3 Tage, (2) 1 Tablette zweimal täglich für 4 Tage, (3) 1 Tablette für 7 Tage.">
+                Wenn mehrere Dosierungsanweisungen angegeben sind, gibt die „Reihenfolge der Anweisung“ die Reihenfolge an, in der sie explizit ausgeführt werden sollen. Zum Beispiel: (1) 1 Tablette täglich für 3 Tage, (2) 1 Tablette zweimal täglich für 4 Tage, (3) 1 Tablette für 7 Tage.">
             >
             ["id1"] = <
                 text = <"Therapeutische Anweisung">
                 description = <"Strukturierte Informationen über eine einzelne therapeutische Anweisung / Anleitung für eine verordnete Einheit, wie z. B. eine Medikamenten- oder Bluttransfusionsverordnung.">
             >
+            ["ac9004"] = <
+                text = <"*(Synthesized) (en)">
+                description = <"">
+            >
         >
         ["nb"] = <
-            ["ac9000"] = <
-                text = <"Anvisningsvarighet (synthesised)">
-                description = <"Varigheten av denne anvisningen. (synthesised)">
-            >
             ["id180"] = <
                 text = <"Dato/tid for seponering">
                 description = <"Dato og valgfri tid når det er planlagt å seponere admininstrasjonen.">
@@ -312,12 +311,12 @@ terminology
                 text = <"Terapeutisk anvisning">
                 description = <"Detaljer om en enkelt anvisning innenfor ordineringen av f.eks. et legemiddel eller en transfusjon.">
             >
+            ["ac9004"] = <
+                text = <"*(Synthesized) (en)">
+                description = <"">
+            >
         >
         ["pt-br"] = <
-            ["ac9000"] = <
-                text = <"Duração da Instrução (synthesised)">
-                description = <"Período de tempo no qual esta orientação se aplica. (synthesised)">
-            >
             ["id180"] = <
                 text = <"*Order stop date/time (en)">
                 description = <"*The date and optional time when it is planned to cease the administration. (en)">
@@ -367,18 +366,18 @@ terminology
                 text = <"Ordem de execução da Orientação">
                 description = <"A posição desta orientação na sequência geral de orientações.">
                 comment = <"Por exemplo: '' 1 '' 2 ',' 3 '.
-        Quando múltiplas orientações de dosagem são expressas, a \"seqüência de instruções\" torna a ordem na qual estas devem ser executados explicitas. Por exemplo: (1) 1 comprimido diariamente por 3 dias, (2) 1 comprimido duas vezes ao dia por 4 dias, (3) 1 comprimido por 7 dias.">
+                Quando múltiplas orientações de dosagem são expressas, a \"seqüência de instruções\" torna a ordem na qual estas devem ser executados explicitas. Por exemplo: (1) 1 comprimido diariamente por 3 dias, (2) 1 comprimido duas vezes ao dia por 4 dias, (3) 1 comprimido por 7 dias.">
             >
             ["id1"] = <
                 text = <"Orientação terapêutica">
                 description = <"Detalhes estruturados de uma única orientação terapêutica para um item prescrito, como um medicamento ou uma solicitação de transfusão de sangue.">
             >
+            ["ac9004"] = <
+                text = <"*(Synthesized) (en)">
+                description = <"">
+            >
         >
         ["en"] = <
-            ["ac9000"] = <
-                text = <"Direction duration (synthesised)">
-                description = <"The length of time for which this direction should be applied. (synthesised)">
-            >
             ["id180"] = <
                 text = <"Order stop date/time">
                 description = <"The date and optional time when it is planned to cease the administration.">
@@ -428,17 +427,98 @@ terminology
                 text = <"Direction sequence">
                 description = <"The intended position of this direction within the overall sequence of directions.">
                 comment = <"For example: ''1' '2', '3'.
-        Where multiple dosage directions are expressed, the 'Direction sequence' makes the order in which they should be executed explicit. For example: (1) 1 tab daily for 3 days, (2) 1 tab twice daily for 4 days, (3) 1 tablet for 7 days.  ">
+                Where multiple dosage directions are expressed, the 'Direction sequence' makes the order in which they should be executed explicit. For example: (1) 1 tab daily for 3 days, (2) 1 tab twice daily for 4 days, (3) 1 tablet for 7 days.  ">
             >
             ["id1"] = <
                 text = <"Therapeutic direction">
                 description = <"Structured details of a single therapeutic direction for an ordered item, such as a medication or blood transfusion order.">
+            >
+            ["ac9004"] = <
+                text = <"(Synthesized)">
+                description = <"">
+            >
+        >
+        ["sl"] = <
+            ["id180"] = <
+                text = <"*Order stop date/time (en)">
+                description = <"*The date and optional time when it is planned to cease the administration. (en)">
+            >
+            ["id179"] = <
+                text = <"*Order start date/time (en)">
+                description = <"*The date and optional time to commence the administration. (en)">
+            >
+            ["id178"] = <
+                text = <"*Review criterion (en)">
+                description = <"*After a number of administrations for when a review is required. (en)">
+                comment = <"*For example: '3 administrations' or 'Two weeks'. (en)">
+            >
+            ["id177"] = <
+                text = <"*Dosage (en)">
+                description = <"*The combination of a medication dose and administration timing for a single day. (en)">
+            >
+            ["id173"] = <
+                text = <"*Number of administrations (en)">
+                description = <"*The number of administrations to be given for this direction. (en)">
+                comment = <"*Example: 'Give once only' = 1 or '400mg 12hrly for 3 doses' = 3. (en)">
+            >
+            ["id157"] = <
+                text = <"*Additional details (en)">
+                description = <"*Further details about an ordered item direction. (en)">
+                comment = <"*For example, conditional instructions such as insulin /glucose infusion rates dependent on blood glucose, or detailed administration instructions for particular preparations. (en)">
+            >
+            ["id91"] = <
+                text = <"*Repetition timing (en)">
+                description = <"*Structured details about pattern of repetition for each set of daily directions. (en)">
+                comment = <"*For example: 'every 3 days', 'on Thursdays and Sundays', '3 days after onset of menstruation'. (en)">
+            >
+            ["at69"] = <
+                text = <"*Indefinite - not to be discontinued (en)">
+                description = <"*The direction should be continued indefinitely with a strong recommendation that it never be discontinued. (en)">
+            >
+            ["at68"] = <
+                text = <"*Indefinite (en)">
+                description = <"*The direction should be continued indefinitely. (en)">
+            >
+            ["id67"] = <
+                text = <"*Direction duration (en)">
+                description = <"*The length of time for which this direction should be applied. (en)">
+                comment = <"*For example: 'for 7 days','Indefinite'. An example of a set of multiple directions, with varying durations might be ... '1 tablet daily for 3 days, 2 tablets daily for 4 days, then 3 tablets Indefinite'. (en)">
+            >
+            ["id58"] = <
+                text = <"*Direction sequence (en)">
+                description = <"*The intended position of this direction within the overall sequence of directions. (en)">
+                comment = <"*For example: ''1' '2', '3'.
+                Where multiple dosage directions are expressed, the 'Direction sequence' makes the order in which they should be executed explicit. For example: (1) 1 tab daily for 3 days, (2) 1 tab twice daily for 4 days, (3) 1 tablet for 7 days.   (en)">
+            >
+            ["id1"] = <
+                text = <"*Therapeutic direction (en)">
+                description = <"*Structured details of a single therapeutic direction for an ordered item, such as a medication or blood transfusion order. (en)">
+            >
+            ["ac9004"] = <
+                text = <"*(Synthesized) (en)">
+                description = <"">
             >
         >
     >
     value_sets = <
         ["ac9000"] = <
             id = <"ac9000">
+            members = <"at68", "at69">
+        >
+        ["ac9001"] = <
+            id = <"ac9001">
+            members = <"at68", "at69">
+        >
+        ["ac9002"] = <
+            id = <"ac9002">
+            members = <"at68", "at69">
+        >
+        ["ac9003"] = <
+            id = <"ac9003">
+            members = <"at68", "at69">
+        >
+        ["ac9004"] = <
+            id = <"ac9004">
             members = <"at68", "at69">
         >
     >
