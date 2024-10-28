@@ -24,8 +24,10 @@
       "Sign off" : "",
       "Speciality" : "",
       "User roles" : "",
-      "MD5-CAM-1.0.1" : "f4fc13f10b7c6a71c1285e84279e15a4",
-      "PARENT:MD5-CAM-1.0.1" : "F6E374B7E08DE198D867B90CCC3D4755"
+      "MD5-CAM-1.0.1" : "7519c2fb359cd70c44e124ce20be2de2",
+      "PARENT:MD5-CAM-1.0.1" : "F6E374B7E08DE198D867B90CCC3D4755",
+      "sem_ver" : "0.1.1",
+      "build_uid" : "e4719af3-08a7-4f4c-9353-5649d28cc804"
     },
     "details" : {
       "en" : {
@@ -124,7 +126,24 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "6B5A7E7C137E9AC00A52EE9481BEC73E"
       },
-      "details" : { }
+      "details" : {
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record the instructions for use of a medication, vaccine or other therapeutic item.",
+          "keywords" : [ "medication", "order", "prescribe", "therapy", "substance", "drug", "therapeutic", "otc", "therapeutic good", "pharmaceutical", "product", "posology" ],
+          "use" : "Use to record the instructions for use of a medication, vaccine or other therapeutic item.\r\n\r\nIt is intended to be used for any type of medication and related order, whether prescribed by a health professional or available for purchase 'over the counter'. The scope of this medication archetype also includes orders for vaccinations or other therapeutic goods, such as bandages or other items that are applied or administered to have a therapeutic effect which have a common pattern for data recording.\r\n\r\nThis archetype is designed to be used in a number of clinical contexts, including but not limited to:\r\n- a record in a clinical consultation (COMPOSITION.encounter); \r\n- a written prescription by a physician, dentist, nurse practitioner, or other designated health professional for a medication to be dispensed and administered (within a COMPOSITION.prescription);\r\n- an item in a current medication list, prescription or drug chart (within COMPOSITION.medication_list); and\r\n- an item in a summary document such as transfer of care (COMPOSITION.transfer_summary) or a referral (COMPOSITION.request). \r\n\r\nIn most cases the order will be simple - for a single item with uncomplicated instructions for dispensing and administration. However this archetype is also designed to allow for more complex orders. For example:\r\n- a reducing dose of predisolone over a period of weeks;\r\n- titration of insulin, with dosing dependent on test results;\r\n- multiple medications prescribed simultaneously as part of a single drug regimen, such as a triple therapy for peptic ulcer; and\r\n- intravenous administration of medications or nutrition supplements.  \r\n\r\nThe archetype has been designed to allow for a range of complexity, from:\r\n- simple narrative instructions for orders like 'furosemide 40mg two tablets in the morning and one at lunch' to ensure compatibility with existing systems; through to\r\n- structured detail for dose, route and timing to represent a fully computable specification.\r\n\r\nIt has also been designed so that a single medication order structure can represent:\r\n- complex sequential medication orders using the same preparation strength to be supported within a single order structure; and\r\n- multiple medication orders can be chained in circumstances where different medications or preparations need to be given sequentially. \r\n\r\nThe amount of the medication is usually represented in terms of a number and corresponding dose unit, however there can also be a narrative statement to ensure compatibility with existing systems and also coverage of all scenarios.\r\n\r\nCluster archetypes have been used to represent some of the content for two reasons:\r\n- in situations where the content has been identified as being also used in other clinical contexts, in particular the paired ACTION.medication archetype for recording actual dispensing, administration etc; and\r\n- to remove less commonly used content from the core archetype framework.",
+          "misuse" : "Not to be used to record the activities related to carrying out the order for medication, vaccine or therapeutic good, such as details about actual administration or dispensing. Use the ACTION.medication for this purpose.\r\n\r\nNot to be used to record the ordering of blood products. Use the INSTRUCTION.transfusion for this purpose.\r\n\r\nNot to be used to record the order for insertion of implants or medical devices such as pacemakers and defibrillators. Use the INSTRUCTION.procedure for this purpose.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-INSTRUCTION.medication_order.v0",
     "differential" : true,
@@ -815,7 +834,24 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "48E7562836049F5F865845C7456F08D4"
       },
-      "details" : { }
+      "details" : {
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record details of a medication preparation, including ,where necessary, details of mutliple ingredients, in the context of an infusion or ad-hoc (extemperaneous) preparation. The majority of dose-based prescriptions will have their precise preparation determined by available ward stock, or by pharmacy supply, while with product-based prescribing, the medication name carries details of the form and strength of the preparation.",
+          "keywords" : [ "medication", "order", "prescribe", "therapy", "substance", "drug", "therapeutic", "otc", "therapeutic good", "ad-hoc", "extemperaneous" ],
+          "use" : "For recording details of a medication preparation with in the context of the original medication order INSTRUCTION and carrying the prescriber's intent, or in the context of a medication ACTION where it serves of a record of the prepartion actually supplied.",
+          "misuse" : "Use in pharmacy stock-control is out-of-scope of the design of this archetype.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.medication_substance.v0",
     "differential" : true,
@@ -931,7 +967,24 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "48E7562836049F5F865845C7456F08D4"
       },
-      "details" : { }
+      "details" : {
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record details of a medication preparation, including ,where necessary, details of mutliple ingredients, in the context of an infusion or ad-hoc (extemperaneous) preparation. The majority of dose-based prescriptions will have their precise preparation determined by available ward stock, or by pharmacy supply, while with product-based prescribing, the medication name carries details of the form and strength of the preparation.",
+          "keywords" : [ "medication", "order", "prescribe", "therapy", "substance", "drug", "therapeutic", "otc", "therapeutic good", "ad-hoc", "extemperaneous" ],
+          "use" : "For recording details of a medication preparation with in the context of the original medication order INSTRUCTION and carrying the prescriber's intent, or in the context of a medication ACTION where it serves of a record of the prepartion actually supplied.",
+          "misuse" : "Use in pharmacy stock-control is out-of-scope of the design of this archetype.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.medication_substance.v0",
     "differential" : true,
@@ -1008,7 +1061,37 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "CDC67E20EB91938ECCCE0FF3B9497829"
       },
-      "details" : { }
+      "details" : {
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To provide structured information on time schedules within a single day that is suitable for computation and display for human interpretation.",
+          "keywords" : [ "timing", "administration", "dosing", "frequency" ],
+          "use" : "For use with medication orders and other instructions where timing is complex and needs to be computable.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sl" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sl"
+          },
+          "purpose" : "*To provide structured information on time schedules within a single day that is suitable for computation and display for human interpretation.(en)",
+          "keywords" : [ ],
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.timing_daily.v0",
     "differential" : true,
@@ -1122,7 +1205,22 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "55B0B08763D142BC502C82C36B0ED959"
       },
-      "details" : { }
+      "details" : {
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record details of scheduled activities over periods longer than a single day.",
+          "keywords" : [ ],
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.timing_repetition.v0",
     "differential" : true,
@@ -1191,7 +1289,23 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "1E7D6F795F76E5D62071822152161AFE"
       },
-      "details" : { }
+      "details" : {
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To provide an overall summary of the status and key dates, related to a medication order.",
+          "keywords" : [ ],
+          "use" : "Use within the context of a medication order Instruction where a summary of the overallcourse is required. This will normally be where the order is is being used within the context of a medicaton summary list, and not  in the context of an orderable prescription record, where medication ctions will normally carry the primary record of the status of the order and key date information.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.medication_course_summary.v0",
     "differential" : true,
@@ -1382,7 +1496,36 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "418EDCE16FC97D91FD25C5F4EB8C0A63"
       },
-      "details" : { }
+      "details" : {
+        "sl" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sl"
+          },
+          "keywords" : [ ],
+          "originalResourceUri" : { },
+          "otherDetails" : {
+            "notes" : "Generated automatically by Adl Designer"
+          }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record details of authorisation of a medication, which may be of the original prescription, or of re-authorisation of a repeat refill.",
+          "keywords" : [ "medication", "order", "prescribe", "therapy", "substance", "drug", "therapeutic", "otc", "therapeutic good", "repeat" ],
+          "use" : "Use in the content of a medication order INSTRUCTION to specify the original authorisation, or in the context of a Medication action ACTION to record details of a re-authorisation or authorisation of a re-issue.\r\n\r\nThis archetype covers the common, universal requirements for authorisation of medication but other local archetypes may be required to cover national or regional variants e.g special contractual arrangements or requirements for further attestation by a secondary clinician.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.medication_authorisation.v0",
     "differential" : true,
@@ -1630,7 +1773,24 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "06CF3E9489AF6D497D85F3A0EDEC0EC7"
       },
-      "details" : { }
+      "details" : {
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record the amount of a medication, vaccine or other therapeutic item to be supplied or supplied to the patient, as part of authorisation, dispensing or administration, both in the context of the original medication order and in a subsequent action. ",
+          "keywords" : [ ],
+          "use" : "Use to record the amount of a medication, vaccine or other therapeutic item to be supplied or supplied to the patient, as part of authorisation, dispensing or administration, both in the context of the original medication order and in a subsequent action. ",
+          "misuse" : "This archetype should not be used to record the original dose amount as part of a dose direction or the strength of a preparation. These are recorded as part of the Medication Order INSTRUCTION, or Medication Substance CLUSTER.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.medication_supply_amount.v0",
     "differential" : true,
